@@ -304,7 +304,7 @@
 
     <!-- Last Updated -->
     <div class="last-updated">
-        🗓️ &nbsp;<strong>Last updated:</strong>&nbsp; June 2025 &nbsp;·&nbsp; Version 1.0.0
+        🗓️ &nbsp;<strong>Last updated:</strong>&nbsp; September 2026 &nbsp;·&nbsp; Version 1.0.0
     </div>
 
     <!-- 1. Introduction -->
@@ -425,25 +425,61 @@
     <div class="section">
         <div class="section-header">
             <div class="section-icon icon-yellow">🔑</div>
-            <span class="section-title">App Permissions</span>
+            <span class="section-title">App Permissions &amp; System Features</span>
         </div>
         <div class="section-body">
             <div class="info-row">
-                <span class="info-label">🌐 Internet</span>
-                <span class="info-value">Required to load content</span>
+                <span class="info-label">🪟 Display Over Other Apps</span>
+                <span class="info-value">Show floating definition bubble &amp; card</span>
             </div>
             <div class="info-row">
-                <span class="info-label">📥 Storage</span>
-                <span class="info-value">Save files locally on device</span>
+                <span class="info-label">⚡ Foreground Service</span>
+                <span class="info-value">Maintain instant lookup bubble while active</span>
             </div>
             <div class="info-row">
                 <span class="info-label">🔔 Notifications</span>
-                <span class="info-value">Send app alerts and updates</span>
+                <span class="info-value">Daily vocabulary alerts &amp; streak reminders</span>
             </div>
             <div class="info-row">
                 <span class="info-label">📋 Clipboard</span>
-                <span class="info-value">Paste content into the app</span>
+                <span class="info-value">Quick lookups for copied words</span>
             </div>
+            <div class="info-row">
+                <span class="info-label">🌐 Internet</span>
+                <span class="info-value">Deliver app updates &amp; AdMob ads</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5.1. AccessibilityService API Policy Disclosure -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-icon icon-cyan">♿</div>
+            <span class="section-title">AccessibilityService API Policy Disclosure</span>
+        </div>
+        <div class="section-body">
+            <p>
+                Lexora utilizes the Android <strong>AccessibilityService API</strong> to provide its optional, 
+                user-initiated "Define with Lexora" floating lookup functionality.
+            </p>
+            <ul class="check-list">
+                <li>
+                    <span class="dot dot-green">✓</span>
+                    <strong>How It Is Used:</strong> When enabled by the user, the Accessibility Service observes text selection events across other apps (e.g. messaging, reading, browsing) to automatically trigger an instant floating definition bubble without requiring the user to switch apps.
+                </li>
+                <li>
+                    <span class="dot dot-green">✓</span>
+                    <strong>Data Handled:</strong> Only the specifically selected or highlighted word is read into temporary memory to fetch definitions from your offline dictionary database.
+                </li>
+                <li>
+                    <span class="dot dot-green">✓</span>
+                    <strong>Zero Personal Data Stored or Shared:</strong> Lexora does NOT collect, store, log, or transmit any user keystrokes, personal messages, passwords, or sensitive information.
+                </li>
+                <li>
+                    <span class="dot dot-green">✓</span>
+                    <strong>User Control:</strong> This permission is completely optional, requires explicit user consent, and can be disabled at any time from within Lexora Settings or Android Accessibility Settings.
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -527,7 +563,7 @@
 
 <!-- Footer -->
 <div class="footer">
-    © 2025 <span>Lexora</span> · All rights reserved
+    © 2026 <span>Lexora</span> · All rights reserved · <a href="https://vishal007m.github.io/lexora_terms/" style="color: var(--accent-blue); text-decoration: none;">Terms of Service</a>
 </div>
 
 </body>
