@@ -296,15 +296,20 @@
 <div class="hero">
     <span class="hero-icon">📖</span>
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Lexora</p>
-    <div class="badge">🔒 Your privacy is our priority</div>
+    <p class="subtitle">Lexora – Modern Offline Dictionary &amp; Vocabulary Builder</p>
+    <div class="badge">🔒 Your privacy is our top priority</div>
+
+    <div style="display: flex; justify-content: center; gap: 12px; margin-top: 20px; max-width: 440px; margin-left: auto; margin-right: auto;">
+        <a href="terms.html" style="flex: 1; text-align: center; padding: 10px 16px; border-radius: 12px; text-decoration: none; font-size: 14px; font-weight: 600; background: var(--surface2); color: var(--text-secondary); border: 1px solid var(--border);">📜 Terms of Service</a>
+        <a href="privacy_policy.html" style="flex: 1; text-align: center; padding: 10px 16px; border-radius: 12px; text-decoration: none; font-size: 14px; font-weight: 600; background: var(--accent-blue); color: #FFFFFF; box-shadow: 0 4px 16px rgba(59,130,246,0.35);">🔒 Privacy Policy</a>
+    </div>
 </div>
 
 <div class="container">
 
     <!-- Last Updated -->
     <div class="last-updated">
-        🗓️ &nbsp;<strong>Last updated:</strong>&nbsp; September 2026 &nbsp;·&nbsp; Version 1.0.0
+        🗓️ &nbsp;<strong>Last updated:</strong>&nbsp; October 2026 &nbsp;·&nbsp; Version 2.730
     </div>
 
     <!-- 1. Introduction -->
@@ -316,8 +321,8 @@
         <div class="section-body">
             <p>
                 Welcome to <strong>Lexora</strong>. We built this app with one goal:
-                to deliver a clean, powerful, and private experience — without
-                selling your data or tracking your habits.
+                to deliver a clean, powerful, and private learning experience — without
+                selling your data, tracking your personal habits, or storing your personal communications.
             </p>
             <p>
                 This Privacy Policy explains what information the app handles,
@@ -341,27 +346,27 @@
             <ul class="check-list">
                 <li>
                     <span class="dot dot-red">✕</span>
-                    Your personal information or identity
+                    Your personal identity, names, or contact lists
                 </li>
                 <li>
                     <span class="dot dot-red">✕</span>
-                    Your usage history or in-app activity
+                    Your private chat messages or external app contents
                 </li>
                 <li>
                     <span class="dot dot-red">✕</span>
-                    Passwords or login credentials
+                    Passwords, keystrokes, or login credentials
                 </li>
                 <li>
                     <span class="dot dot-red">✕</span>
-                    Location data, camera, or microphone access
+                    Location data, GPS, camera, or microphone access
                 </li>
                 <li>
                     <span class="dot dot-red">✕</span>
-                    Device identifiers or advertising IDs
+                    Device identifiers for tracking across apps
                 </li>
                 <li>
                     <span class="dot dot-red">✕</span>
-                    Any data that leaves your device
+                    Any personal user data that leaves your device
                 </li>
             </ul>
         </div>
@@ -376,26 +381,29 @@
         <div class="section-body">
             <p>
                 The following data is stored <strong>only on your device</strong>
-                and is never sent to us or any third party:
+                inside a secure local Room SQLite database and DataStore, and is never uploaded to our servers or third parties:
             </p>
             <ul class="check-list">
                 <li>
                     <span class="dot dot-blue">✓</span>
-                    Your app preferences and settings
+                    <strong>Define with Lexora History:</strong> When you use the instant definition feature, your recent looked-up words are kept in a local history list for your convenience so you can revisit them later. You can clear this history anytime.
                 </li>
                 <li>
                     <span class="dot dot-blue">✓</span>
-                    Content you create or save within the app
+                    <strong>Language Preferences:</strong> Your selected learning language and translation/primary mother tongue.
                 </li>
                 <li>
                     <span class="dot dot-blue">✓</span>
-                    Locally cached data for offline use
+                    <strong>Custom Word Collections &amp; Favorites:</strong> Word collections, custom folders, and bookmarked terms created by you.
+                </li>
+                <li>
+                    <span class="dot dot-blue">✓</span>
+                    <strong>Learning Stats &amp; Streaks:</strong> Local quiz progress, daily streak counts, and flashcard mastery.
                 </li>
             </ul>
             <div class="highlight-box">
                 <p>
-                    💡 You can clear all locally stored data at any time from
-                    <strong>Settings → Clear Data</strong>.
+                    💡 You have complete control: You can clear history or reset app data at any time from within the app settings.
                 </p>
             </div>
         </div>
@@ -409,15 +417,18 @@
         </div>
         <div class="section-body">
             <p>
-                Lexora may connect to third-party services (such as APIs or
-                content providers) to deliver app features. These services have
-                their own privacy policies and we are not responsible for their
-                data practices.
+                To provide language translations and optional app monetization, Lexora interacts with trusted standard service providers:
             </p>
-            <p>
-                We encourage you to review the privacy policy of any third-party
-                service you interact with through the app.
-            </p>
+            <ul class="check-list">
+                <li>
+                    <span class="dot dot-blue">✓</span>
+                    <strong>Language Translation Services:</strong> Word definitions and translations are fetched via secure APIs strictly for language learning. No personal identifiers or user tracking data are attached to translation queries.
+                </li>
+                <li>
+                    <span class="dot dot-blue">✓</span>
+                    <strong>Google AdMob:</strong> Standard non-intrusive mobile ads powered by the official Google Mobile Ads SDK, strictly following Google Play Developer Policies and Families requirements.
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -455,7 +466,7 @@
     <div class="section">
         <div class="section-header">
             <div class="section-icon icon-cyan">♿</div>
-            <span class="section-title">AccessibilityService API Policy Disclosure</span>
+            <span class="section-title">5.1. AccessibilityService API Policy Disclosure</span>
         </div>
         <div class="section-body">
             <p>
@@ -480,6 +491,71 @@
                     <strong>User Control:</strong> This permission is completely optional, requires explicit user consent, and can be disabled at any time from within Lexora Settings or Android Accessibility Settings.
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <!-- 5.2. Define with Lexora History Privacy -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-icon icon-purple">🕒</div>
+            <span class="section-title">5.2. Define with Lexora History Privacy</span>
+        </div>
+        <div class="section-body">
+            <p>
+                When words are looked up via the "Define with Lexora" floating bubble or system text action, 
+                they are stored locally on your device for your reference:
+            </p>
+            <ul class="check-list">
+                <li>
+                    <span class="dot dot-green">✓</span>
+                    <strong>Stored Exclusively On-Device:</strong> Selected words, part of speech, definition snippets, and translations are kept in a local encrypted SQLite database on your device.
+                </li>
+                <li>
+                    <span class="dot dot-green">✓</span>
+                    <strong>Zero Tracking or External Transmission:</strong> History entries are never uploaded to any cloud server, third party, or analytics engine.
+                </li>
+                <li>
+                    <span class="dot dot-green">✓</span>
+                    <strong>User Deletion:</strong> You can delete any individual history item or clear the entire history log at any time directly from the History screen or from Settings.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 5.3. Multi-Language Translation Data Privacy -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-icon icon-blue">🌐</div>
+            <span class="section-title">5.3. Multi-Language Translation Data Privacy</span>
+        </div>
+        <div class="section-body">
+            <p>
+                Lexora allows users to learn vocabulary and view translations in their mother tongue / primary language:
+            </p>
+            <ul class="check-list">
+                <li>
+                    <span class="dot dot-green">✓</span>
+                    <strong>No User Profiling:</strong> Translation queries consist strictly of the vocabulary word or educational phrase. Queries are never linked to your identity, IP profile, or device ID.
+                </li>
+                <li>
+                    <span class="dot dot-green">✓</span>
+                    <strong>Local Caching:</strong> Frequently translated words are cached locally in your device's SQLite database to minimize network usage and maintain offline availability.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 5.4. Text-To-Speech (TTS) Pronunciations -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-icon icon-pink">🔊</div>
+            <span class="section-title">5.4. Text-to-Speech &amp; Audio Pronunciations</span>
+        </div>
+        <div class="section-body">
+            <p>
+                Audio pronunciations in Lexora are powered by the on-device Android TextToSpeech engine. 
+                Lexora does not access the microphone, record user voice input, or send audio data to any external server.
+            </p>
         </div>
     </div>
 
